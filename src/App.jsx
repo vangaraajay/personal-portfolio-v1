@@ -2,9 +2,11 @@ import { useState } from 'react'
 import {Route, createBrowserRouter, RouterProvider, createRoutesFromElements} from 'react-router-dom'
 import './App.css'
 import Navbar from '../components/Navbar'
+import Projects from '../components/Projects'
+import Skills from '../components/Skills'
+import Contact from '../components/Contact'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -18,35 +20,15 @@ function App() {
       <a href="#contact">Contact</a>
 
       <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>
-            <strong>Languages & Frameworks:</strong> Java, Python, C++, C#, JavaScript, TypeScript, React (Vite, React Router), React Native, Node.js, Express.js, Tailwind CSS, .NET, OpenCV, LangChain
-          </li>
-          <li>
-            <strong>Databases & Cloud:</strong> PostgreSQL, MongoDB, DynamoDB, pgvector, AWS (S3, Lambda, EC2, API Gateway, Cognito, AI Agents), Terraform, Kubernetes
-          </li>
-          <li>
-            <strong>Tools & Practices:</strong> Git/GitHub, GitHub Actions, Jenkins, Docker, Linux CLI, RESTful APIs
-          </li>
-          <li>
-            <strong>Certifications:</strong> AWS Cloud Practitioner, Java Fundamentals
-          </li>
-        </ul>
+        <Skills />
       </section>
 
       <section id="projects">
-        <h1 className="text-5xl">Projects</h1>
-        <ul>
-          <li>Project 1: Description of project 1.</li>
-          <li>Project 2: Description of project 2.</li>
-          <li>Project 3: Description of project 3.</li>
-          <li>Project 4: Description of project 4.</li>
-        </ul>
+        <Projects />
       </section>
 
       <section id="contact">
-        <h1>Contact</h1>
+        <Contact />
       </section>
     </>
   )
