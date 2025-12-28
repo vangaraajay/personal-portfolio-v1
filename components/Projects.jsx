@@ -2,15 +2,28 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <>        
-        <h1 className="text-5xl">Projects</h1>
+    <>
+        <h1>Projects</h1>
         <ul>
-          <li>Project 1: Description of project 1.</li>
-          <li>Project 2: Description of project 2.</li>
-          <li>Project 3: Description of project 3.</li>
-          <li>Project 4: Description of project 4.</li>
+            <li>
+                <strong>Project 1:</strong> 
+                <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://your-live-site1.com" target="_blank" rel="noopener noreferrer">Live</a>
+            </li>
+            <li>
+                <strong>Project 2:</strong> 
+                <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://your-live-site2.com" target="_blank" rel="noopener noreferrer">Live</a>
+            </li>
+            <li>
+                <strong>Project 3:</strong> 
+                <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://your-live-site3.com" target="_blank" rel="noopener noreferrer">Live</a>
+            </li>
         </ul>
     </>
+
+
   )
 }
 
