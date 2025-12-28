@@ -34,7 +34,7 @@ const Skills = () => {
               className="about-card pop-up p-8 rounded-lg text-left"
             >
               <div className="text-lg md:text-xl font-semibold mb-3 navbar-font">{b.title}</div>
-              <div className="text-base md:text-lg text-gray-800 leading-relaxed skill-body-font">{b.body}</div>
+              <div className="text-base md:text-lg text-gray-600 leading-relaxed skill-body-font">{b.body}</div>
             </div>
           ))}
         </div>
