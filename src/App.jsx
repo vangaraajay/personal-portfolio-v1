@@ -11,7 +11,7 @@ import SplashScreen from '../components/SplashScreen'
 function App() {
 
   return (
-    <>
+    <div >
       <SplashScreen onFinish={() => {}} />
         <Navbar />
         <About />
@@ -27,7 +27,7 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
-    </>
+    </div>
   )
 }
 
