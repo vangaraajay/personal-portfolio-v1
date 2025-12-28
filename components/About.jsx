@@ -2,17 +2,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center bg-gray-50 px-6 pt-32 pb-20">
+    <section className="min-h-[calc(100vh-80px)] flex flex-col items-center bg-gray-50 px-6 pt-27 pb-20">
       {/* Title */}
-      <h1 className="text-5xl md:text-6xl font-bold text-center text-black mb-6 font-nunito">
-        Who am I?
+      <h1 className="text-3xl md:text-5xl font-bold text-center text-black mb-8 font-nunito max-w-5xl mx-auto navbar-font">
+        Hi! I’m Ajay Vangara, a student developer at the University of Florida.
       </h1>
 
       {/* Description */}
-      <div className="max-w-3xl text-center text-gray-700 space-y-4 text-lg md:text-xl font-nunito">
+      <div className="max-w-3xl text-center text-gray-700 space-y-4 text-lg md:text-xl font-nunito mb-8">
         <p>
-          Hi! I’m Ajay Vangara, a student developer at the University of Florida.
-          I've built a variety of projects including full-stack web apps, mobile apps, 
+          I'm an aspiring software engineer who's built a variety of projects including full-stack web apps, mobile apps, 
           and cloud-based systems, experimenting with AI and infrastructure along the way.
           I love creating technology that can have a strong impact on society, 
           both with the use of novel AI and without!
@@ -24,7 +23,7 @@ const About = () => {
       </div>
 
       {/* Links */}
-      <div className="mt-12 flex justify-center gap-6 flex-wrap">
+      <div className="mt-4 flex justify-center gap-15 flex-wrap">
         {/* Skills Button */}
         <a
           href="#skills"
