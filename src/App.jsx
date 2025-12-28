@@ -6,25 +6,27 @@ import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import About from '../components/About'
+import SplashScreen from '../components/SplashScreen'
 
 function App() {
 
   return (
     <>
-      <Navbar />
-      <About />
+      <SplashScreen onFinish={() => {}} />
+        <Navbar />
+        <About />
 
-      <section id="skills">
-        <Skills />
-      </section>
+        <section id="skills">
+          <Skills />
+        </section>
 
-      <section id="projects">
-        <Projects />
-      </section>
+        <section id="projects">
+          <Projects />
+        </section>
 
-      <section id="contact">
-        <Contact />
-      </section>
+        <section id="contact">
+          <Contact />
+        </section>
     </>
   )
 }

@@ -20,6 +20,11 @@ const Projects = () => {
                 <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://your-live-site3.com" target="_blank" rel="noopener noreferrer">Live</a>
             </li>
+            <li>
+                <strong>Project 4:</strong> 
+                <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://your-live-site3.com" target="_blank" rel="noopener noreferrer">Live</a>
+            </li>
         </ul>
     </>
 
