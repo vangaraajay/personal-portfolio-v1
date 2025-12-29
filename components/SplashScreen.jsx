@@ -117,14 +117,14 @@ const SplashScreen = ({ onFinish }) => {
        }
 
 
-       if (!cancelled) {
-        const splash = document.querySelector(".splash-screen");
-        splash.classList.add("translate-x-[-100%]");
-        await sleep(1500);
+    if (!cancelled) {
+     const splash = document.querySelector(".splash-screen");
+     splash.classList.add("translate-x-[-100%]");
+     await sleep(1500);
 
-        setFinished(true);
-        if (onFinish) onFinish();
-       }
+     setFinished(true);
+     if (onFinish) onFinish();
+    }
    };
 
 
@@ -139,13 +139,13 @@ const SplashScreen = ({ onFinish }) => {
 
 const handleSkip = async () => {
     // stop the loop immediately
-    setDisplayText(fullText);
-    const splash = document.querySelector(".splash-screen");
-    splash.classList.add("translate-x-[-100%]");
-    await sleep(1500);
+        setDisplayText(fullText);
+        const splash = document.querySelector(".splash-screen");
+        splash.classList.add("translate-x-[-100%]");
+        await sleep(1500);
 
-    setFinished(true);
-    if (onFinish) onFinish();
+        setFinished(true);
+        if (onFinish) onFinish();
 };
 
 
