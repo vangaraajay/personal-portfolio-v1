@@ -14,18 +14,42 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-6">
             <a
               href="#skills"
+                onClick={(e) => {
+                    e.preventDefault(); // stop default jump
+                    const el = document.getElementById("skills");
+                    if (!el) return;
+                    const yOffset = -80; // offset for navbar
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                }}
               className="text-sm px-3 py-2 rounded transition-transform duration-200 transform hover:bg-white hover:text-black hover:scale-105"
             >
               Skills
             </a>
             <a
               href="#projects"
+                onClick={(e) => {
+                    e.preventDefault(); // stop default jump
+                    const el = document.getElementById("projects");
+                    if (!el) return;
+                    const yOffset = -80; // offset for navbar
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                }}
               className="text-sm px-3 py-2 rounded transition-transform duration-200 transform hover:bg-white hover:text-black hover:scale-105"
             >
               Projects
             </a>
             <a
               href="#contact"
+              onClick={(e) => {
+                    e.preventDefault(); // stop default jump
+                    const el = document.getElementById("contact");
+                    if (!el) return;
+                    const yOffset = -80; // offset for navbar
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                }}
               className="text-sm px-3 py-2 rounded transition-transform duration-200 transform hover:bg-white hover:text-black hover:scale-105"
             >
               Contact

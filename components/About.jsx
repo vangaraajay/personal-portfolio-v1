@@ -27,6 +27,14 @@ const About = () => {
         {/* Skills Button */}
         <a
           href="#skills"
+          onClick={(e) => {
+                e.preventDefault(); // stop default jump
+                const el = document.getElementById("skills");
+                if (!el) return;
+                const yOffset = -80; // offset for navbar
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+            }}
           className="bg-white text-black border border-black rounded-lg px-6 py-4 text-center transition-transform transition-shadow duration-200 hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 max-w-xs"
         >
           <div className="font-semibold text-lg md:text-xl">Skills</div>
@@ -36,6 +44,14 @@ const About = () => {
         {/* Projects Button */}
         <a
           href="#projects"
+          onClick={(e) => {
+                e.preventDefault(); // stop default jump
+                const el = document.getElementById("projects");
+                if (!el) return;
+                const yOffset = -80; // offset for navbar
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+            }}
           className="bg-white text-black border border-black rounded-lg px-6 py-4 text-center transition-transform transition-shadow duration-200 hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 max-w-xs"
         >
           <div className="font-semibold text-lg md:text-xl">Projects</div>
@@ -44,8 +60,16 @@ const About = () => {
 
         {/* Contact Button */}
         <a
-          href="#contact"
-          className="bg-white text-black border border-black rounded-lg px-6 py-4 text-center transition-transform transition-shadow duration-200 hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 max-w-xs"
+            href="#contact"
+            onClick={(e) => {
+                e.preventDefault(); // stop default jump
+                const el = document.getElementById("contact");
+                if (!el) return;
+                const yOffset = -80; // offset for navbar
+                const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+            }}
+            className="bg-white text-black border border-black rounded-lg px-6 py-4 text-center transition-transform transition-shadow duration-200 hover:bg-black hover:text-white hover:shadow-lg hover:-translate-y-1 max-w-xs"
         >
           <div className="font-semibold text-lg md:text-xl">Contact</div>
           <div className="text-sm md:text-base mt-1">Click here to get in touch</div>
