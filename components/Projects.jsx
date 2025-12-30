@@ -4,26 +4,26 @@ const Projects = () => {
     const projects = [
         {
             title: 'Project 1',
-            desc: 'A full‑stack web application built with React and Node.js that demonstrates authentication, CRUD operations, and responsive UI.',
-            github: 'https://github.com/yourusername/project1',
+            desc: 'A AI-Powered Personal Planner app that allows you to interact with a planner app with natural language. Built with React, Langchain, and hosted and deployed on AWS.',
+            github: 'https://github.com/vangaraajay/AI-Personal-Planner',
             live: 'https://your-live-site1.com',
         },
         {
             title: 'Project 2',
-            desc: 'Mobile app built with React Native that integrates device APIs and a real‑time backend for collaboration features.',
-            github: 'https://github.com/yourusername/project2',
+            desc: 'Mobile app that assists in tracking calories through an AI agent. Built with React Native frontend, AWS Bedrock agents, Supabase, and Supabase auth.',
+            github: 'https://github.com/vangaraajay/CalTrackerApp',
             live: 'https://your-live-site2.com',
         },
         {
             title: 'Project 3',
-            desc: 'Cloud-native service deployed to AWS with serverless functions, event-driven processing, and observability.',
-            github: 'https://github.com/yourusername/project3',
+            desc: 'AI Powered PCB test plan generator that creates test plans through AI. Built for the UF Ignite Hackathon by Aeronix.',
+            github: 'https://github.com/vangaraajay/IGNITE-Hackathon',
             live: 'https://your-live-site3.com',
         },
         {
             title: 'Project 4',
-            desc: 'Computer vision project using OpenCV and custom models to analyze and label images in near real-time.',
-            github: 'https://github.com/yourusername/project4',
+            desc: 'Version 1 of my personal portfolio website! It was built with React, Javascript, and TailwindCSS.',
+            github: 'https://github.com/vangaraajay/personal-portfolio-v1',
             live: 'https://your-live-site4.com',
         },
     ]
@@ -82,9 +82,9 @@ const Projects = () => {
                                     <a href={p.github} target="_blank" rel="noopener noreferrer" className="navbar-font text-sm md:text-base px-3 py-2 border border-black rounded hover:bg-black hover:text-white transition">
                                         GitHub
                                     </a>
-                                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="navbar-font text-sm md:text-base px-3 py-2 border border-black rounded hover:bg-black hover:text-white transition">
-                                        Live
-                                    </a>
+                                    {/*<a href={p.live} target="_blank" rel="noopener noreferrer" className="navbar-font text-sm md:text-base px-3 py-2 border border-black rounded hover:bg-black hover:text-white transition">
+                                        Demo
+                                    </a>*/}
                                 </footer>
                             </article>
                         )
