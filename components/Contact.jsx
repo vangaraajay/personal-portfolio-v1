@@ -38,9 +38,9 @@ const Contact = () => {
             </div>
 
             <div className="space-y-3">
-              <div className="skill-body-font"><strong className="navbar-font">Email:</strong> <a href="mailto:your.email@example.com" className="text-black">your.email@example.com</a></div>
-              <div className="skill-body-font"><strong className="navbar-font">LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="text-black">linkedin.com/in/yourprofile</a></div>
-              <div className="skill-body-font"><strong className="navbar-font">GitHub:</strong> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-black">github.com/yourusername</a></div>
+              <div className="skill-body-font"><strong className="navbar-font">Email:</strong> <a href="mailto:vangaraajay@gmail.com" className="text-black">your.email@example.com</a></div>
+              <div className="skill-body-font"><strong className="navbar-font">LinkedIn:</strong> <a href="https://www.linkedin.com/in/vangaraajay/" target="_blank" rel="noopener noreferrer" className="text-black">linkedin.com/in/yourprofile</a></div>
+              <div className="skill-body-font"><strong className="navbar-font">GitHub:</strong> <a href="https://github.com/vangaraajay" target="_blank" rel="noopener noreferrer" className="text-black">github.com/yourusername</a></div>
             </div>
           </aside>
         </div>
