@@ -1,30 +1,39 @@
 import React, { useEffect, useRef, useState } from 'react'
+// To add images to projects, you have two options:
+// Option 1: Put images in the 'public' folder and reference them: image: '/images/project1.jpg'
+// Option 2: Put images in 'src/assets' folder and import them:
+//           import project1Image from '../src/assets/project1.jpg'
+//           Then use: image: project1Image
 
 const Projects = () => {
     const projects = [
         {
-            title: 'Project 1',
-            desc: 'A AI-Powered Personal Planner app that allows you to interact with a planner app with natural language. Built with React, Langchain, and hosted and deployed on AWS.',
-            github: 'https://github.com/vangaraajay/AI-Personal-Planner',
-            live: 'https://your-live-site1.com',
-        },
-        {
-            title: 'Project 2',
+            title: 'Gym Calorie Tracker App',
             desc: 'Mobile app that assists in tracking calories through an AI agent. Built with React Native frontend, AWS Bedrock agents, Supabase, and Supabase auth.',
             github: 'https://github.com/vangaraajay/CalTrackerApp',
             live: 'https://your-live-site2.com',
+            image: '/Gym calorie tracker app screenshot.png',
         },
         {
-            title: 'Project 3',
+            title: 'Personal Planner Web App',
+            desc: 'A AI-Powered Personal Planner app that allows you to interact with a planner app with natural language. Built with React, Langchain, and hosted and deployed on AWS.',
+            github: 'https://github.com/vangaraajay/AI-Personal-Planner',
+            live: 'https://your-live-site1.com',
+            image: '/Ai Persnal Planner screenshot.png',
+        },
+        {
+            title: 'PCB Test Plan Generator',
             desc: 'AI Powered PCB test plan generator that creates test plans through AI. Built for the UF Ignite Hackathon by Aeronix.',
             github: 'https://github.com/vangaraajay/IGNITE-Hackathon',
             live: 'https://your-live-site3.com',
+            image: '/PCB Test maker screenshot.png',
         },
         {
-            title: 'Project 4',
+            title: 'Portfolio Website',
             desc: 'Version 1 of my personal portfolio website! It was built with React, Javascript, and TailwindCSS.',
             github: 'https://github.com/vangaraajay/personal-portfolio-v1',
             live: 'https://your-live-site4.com',
+            image: '/Portfolio screenshot.png',
         },
     ]
 
@@ -67,10 +76,17 @@ const Projects = () => {
                         const delayClass = delays[idx % delays.length]
                         return (
                             <article key={p.title} className={`about-card pop-up card-strong-border p-6 md:p-8 rounded-lg flex flex-col ${inView ? `slide-up ${delayClass}` : 'opacity-0'}`}>
-                                {/* image placeholder - replace with <img src={p.image} .../> when available */}
-                                <div className="w-full h-40 md:h-44 bg-gray-100 rounded-md mb-4 flex items-center justify-center overflow-hidden">
-                                    <span className="text-gray-400">Image</span>
-                                </div>
+                                {p.image ? (
+                                    <img 
+                                        src={p.image} 
+                                        alt={p.title} 
+                                        className="w-full h-40 md:h-44 object-cover rounded-md mb-4"
+                                    />
+                                ) : (
+                                    <div className="w-full h-40 md:h-44 bg-gray-100 rounded-md mb-4 flex items-center justify-center overflow-hidden">
+                                        <span className="text-gray-400">Image</span>
+                                    </div>
+                                )}
 
                                 <header>
                                     <h3 className="navbar-font text-lg md:text-xl font-semibold mb-2">{p.title}</h3>
